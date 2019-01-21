@@ -1,0 +1,27 @@
+$color-text: #fff;
+
+.content-slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: start;
+  padding-top: 8rem;
+  padding-bottom: 9rem;
+  
+  &_title {
+    color: $color-text;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  &_text {
+    color: $color-text;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+    padding: 20px 0;
+    margin-bottom: 13px;
+  }
+}

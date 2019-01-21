@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  &-logo {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: center;
+
+    &_item {
+      padding: 0 15px;
+      font-size: 16px;
+      line-height: 2;
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: #ef6c00;
+      }
+    }
+
+    &_list {
+      display: flex;
+    }
+  }
+
+  &-login {
+    display: flex;
+    cursor: pointer;
+
+    svg-icon {
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<div class="content-user">
+  <div class="container">
+    <div class="content-user_title title">
+      Our cheerful users
+    </div>
+    <div class="content-user_subtitle">
+      Attention! Sorting users by registration date
+    </div>
+    <div class="content-user_body">
+    <div *ngFor="let user of content" class="content-user_item">
+        <div class="content-user_icon">
+          <img src="../../assets/images/user.png" alt="">
+        </div>
+        <div class="content-user_item-body">
+          <div class="content-user_item--name">
+              {{user.name}}
+          </div>
+          <div class="content-user_item--text">
+              {{user.role}}
+          </div>
+          <div class="content-user_item--email">
+              {{user.email}}
+          </div>
+          <div class="content-user_item--phone">
+              {{user.phone}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="showmore">
+      <button class="_btn load-more" (click)="getData()">
+        Show more
+      </button>
+    </div>
+  </div>
+</div>

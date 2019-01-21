@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~flexboxgrid/css/flexboxgrid.min.css';
+
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  margin: 0 auto;
+}
+
+._btn {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #ef6c00;
+  color: #fff;
+  text-decoration: none;
+  will-change: background-color;
+  transition: background-color .3s ease;
+  line-height: 2;
+  border-radius: 3px;
+  max-width: 290px;
+}
+
+._btn span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+._text-left {
+   text-align: left;
+}
+
+._pt-med {
+  padding-top: 15px;
+}
+
+.title {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 42px;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+.content-info {
+  padding: 7rem 0;
+  margin-bottom: 10px;
+
+  &_title{
+    padding: 1rem 0 2rem;
+  }
+  &_subtitle{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 26px;
+    text-align: left;
+    padding: 10px 0 0;
+  }
+
+  &_icon {
+    padding: 0 0 15px;
+  }
+
+  &_link {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ef6c00;
+    font-size: 22px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  &_item {
+    text-align: left;
+    @media (min-width: 1440px) {
+      max-width: 22rem;
+    }
+  }
+
+  &_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #4c4b4b;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-bottom: 17px;
+  }
+
+  &_body {
+    margin-bottom: 3.5rem;
+  }
+}
