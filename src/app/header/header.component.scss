@@ -9,6 +9,8 @@
     letter-spacing: 1px;
     font-weight: 800;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
   }
 
   &-menu {
@@ -34,10 +36,17 @@
 
   &-login {
     display: flex;
+    align-items: center;
     cursor: pointer;
+
+    &:hover {
+      color: #ef6c00;
+    }
 
     svg-icon {
       margin: 0 10px;
+      display: flex;
+      align-items: center;
     }
   }
 }

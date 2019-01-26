@@ -30,6 +30,11 @@ body {
   max-width: 290px;
 }
 
+._btn:hover {
+  cursor: pointer;
+  background-color: #ff9a46;
+}
+
 ._btn span {
   font-weight: 600;
   font-size: 20px;
@@ -49,4 +54,12 @@ body {
   color: #000;
   font-size: 42px;
   text-align: center;
+}
+
+.load-more {
+  margin: 2rem auto;
+  background-color: transparent;
+  border: 2px solid #ef6c00;
+  color: #ef6c00;
+  font-weight: bold;
 }

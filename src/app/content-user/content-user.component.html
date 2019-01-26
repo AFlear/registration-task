@@ -28,9 +28,10 @@
       </div>
     </div>
     <div class="showmore">
-      <button class="_btn load-more" (click)="getData()">
+      <button class="_btn load-more" (click)="getData()" *ngIf="!isHidden">
         Show more
       </button>
     </div>
+
   </div>
 </div>

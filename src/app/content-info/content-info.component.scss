@@ -25,6 +25,11 @@
     text-align: left;
     text-decoration: none;
     line-height: 1;
+    font-weight: 500;
+
+    &:hover {
+      color: #ff9a46;
+    }
   }
 
   &_item {
