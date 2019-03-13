@@ -1,0 +1,181 @@
+.content-register {
+  padding: 0 0 2rem;
+
+  &_title{
+    //padding: 1rem 0 2rem;
+    padding-bottom: 5px;
+  }
+
+  &_subtitle {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 16.5px;
+    text-align: center;
+    padding: 2px 0 20px;
+  }
+
+  &_form {
+    margin: 1rem 0;
+  }
+
+  &_link {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ef6c00;
+    font-size: 22px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  &_item {
+    text-align: left;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-basis: 33.33%;
+
+    &--name {
+      font-weight: 600;
+      font-size: 24px;
+      padding-top: 24px;
+    }
+    &--text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      padding: 10px 0 0;
+      color: #949292;
+    }
+    &--email {
+      line-height: 18px;
+      color: #949292;
+    }
+    &--phone {
+      line-height: 18px;
+      color: #949292;
+    }
+  }
+
+  &_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+    text-align: left;
+    padding-bottom: 17px;
+  }
+  &_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+    text-align: left;
+    padding-bottom: 17px;
+  }
+
+  &_body {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.input {
+  position: relative;
+  padding: 5px 0;
+  &-default {
+    padding: 10px 14px;
+    border: 1px solid #8d8c8c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+
+    &::placeholder {
+      color: #8d8c8c;
+    }
+  }
+
+  &-label {
+    position: absolute;
+    background-color: #fff;
+    font-size: 12px;
+    color: #8d8c8c;
+    left: 14px;
+    top: 0;
+    padding: 0 4px;
+    line-height: 1;
+  }
+}
+
+.select {
+  position: relative;
+  padding: 5px 0;
+  select {
+    padding: 10px 14px;
+    border: 1px solid #8d8c8c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.upload {
+  position: relative;
+  padding: 5px 0;
+
+  span {
+    font-size: 12px;
+    padding-left: 14px;
+    display: block;
+    color: #8d8c8c;
+    text-align: left;
+  }
+
+  &_input {
+    position: relative;
+    padding: 10px 14px;
+    border: 1px solid #8d8c8c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+
+    &::after{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30%;
+      height: 100%;
+      content: 'Upload';
+      background: #ef6c00;
+      border: none;
+      line-height: 2.25;
+      font-size: 18px;
+      color: #fff;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    input{
+      &::-webkit-file-upload-button {
+        cursor: pointer;
+        opacity: 0;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        right: 0;
+        position: absolute;
+        top: 0;
+        height: 100%;
+      }
+    }
+  }
+  &_label {
+    position: absolute;
+    top: 25%;
+    left: 14px;
+    margin: auto;
+  }
+}

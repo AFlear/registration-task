@@ -1,0 +1,8 @@
+
+<div *ngIf="!isNotLogined">
+  <form [formGroup]="loginForm" class="login-form">
+  <input formControlName="login" class="login-input" type="text" placeholder="Username">
+  <input formControlName="password" class="login-input" type="password" placeholder="Password">
+  <input type="submit" class="_btn login-btn"  (click)="loginUser($event)">
+</form>
+</div>

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {UserService} from '../shared/services/user.service';
 
 @Component({
   selector: 'app-content-user',
@@ -11,70 +12,23 @@ export class ContentUserComponent implements OnInit {
   public counter: number;
   public isHidden: boolean = false;
   public hiddenSpinner: boolean = true;
+  private page = 1;
+  private lastPageIndex:any;
 
-  constructor() {
+  constructor(private userService: UserService) {
     this.counter = 0;
-    this.testUsers = [{
-      name: 'test',
-      role: 'developer',
-      email: 'test@gmail.com',
-      phone: '+380661668002'
-    }, {
-      name: 'test2',
-      role: 'developer',
-      email: 'test@gmail.com',
-      phone: '+380661668002'
-    }, {
-      name: 'test3',
-      role: 'developer',
-      email: 'test@gmail.com',
-      phone: '+380661668002'
-    }, {
-      name: 'test4',
-      role: 'developer',
-      email: 'test@gmail.com',
-      phone: '+380661668002'
-    }, {
-      name: 'test5',
-      role: 'developer',
-      email: 'test@gmail.com',
-      phone: '+380661668002'
-    }, {
-      name: 'test6',
-      role: 'developer',
-      email: 'test@gmail.com',
-      phone: '+380661668002'
-    },
-      {
-        name: 'test7',
-        role: 'developer',
-        email: 'test@gmail.com',
-        phone: '+380661668002'
-      }, {
-        name: 'test8',
-        role: 'developer',
-        email: 'test@gmail.com',
-        phone: '+380661668002'
-      }, {
-        name: 'test9',
-        role: 'developer',
-        email: 'test@gmail.com',
-        phone: '+380661668002'
-      }];
-    this.getData();
   }
 
   ngOnInit() {
-
+    this.getData();
   }
 
   public getData() {
-    let tmp = this.testUsers.slice(this.counter, this.counter + 6);
-    tmp.forEach((user) => {
-      this.content.push(user);
+    this.userService.getUsers(this.page).subscribe((res) => {
+      this.content.push(...res);
+      this.page += 1;
     });
-    this.counter += 6;
-    if(this.content.length >= this.testUsers.length) {
+    if (this.page >=3) {
       this.isHidden = true;
       this.hiddenSpinner = false;
     }

@@ -1,0 +1,71 @@
+<div class="content-register">
+  <div class="container">
+    <div class="content-register_title title">
+      Register to get a work
+    </div>
+    <div class="content-register_subtitle">
+      Attention! After successful registration and alert, update the list of users in the block from the top
+    </div>
+    <form [formGroup]="registerForm" class="content-register_form">
+      <div class="row">
+        <div class="col-lg-4 pt-4">
+          <div class="input">
+            <span class="input-label">First Name</span>
+            <input
+              formControlName="first_name"
+              class="input-default"
+              type="text"
+              placeholder="Your name">
+          </div>
+        </div>
+        <div class="col-lg-4 pt-4">
+          <div class="input">
+            <span class="input-label">Email</span>
+            <input
+              formControlName="email"
+              class="input-default"
+              type="email"
+              placeholder="Your email">
+          </div>
+        </div>
+        <div class="col-lg-4 pt-4">
+          <div class="input">
+            <span class="input-label">Last Name</span>
+            <input
+              formControlName="last_name"
+              class="input-default"
+              type="text"
+              placeholder="Last name">
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 pt-4">
+          <div class="select">
+            <select name="position" id="" >
+              <option disabled>Select your option</option>
+              <option value="option1">option1</option>
+              <option value="option1">option1</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-4">
+          <div class="upload">
+            <div class="upload_input">
+              <input name="input" id="file" type="file" >
+            </div>
+            <label class="upload_label" for="input">Upload your photo</label>
+            <span>File format jpg up to 5 MB, the minimum size of 70x70px</span>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <button class="_btn _btn-sing_up" (click)="submitForm()">
+    Sing up
+  </button>
+
+
+</div>
+</div>

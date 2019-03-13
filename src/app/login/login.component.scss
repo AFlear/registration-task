@@ -1,0 +1,33 @@
+.login {
+  &-form{
+    position: relative;
+  }
+  &-input {
+    position: relative;
+    padding: 10px 14px;
+    border: 1px solid #8d8c8c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0;
+
+    &::after{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30%;
+      height: 100%;
+      content: 'Upload';
+      background: #ef6c00;
+      border: none;
+      line-height: 2.25;
+      font-size: 18px;
+      color: #fff;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  &-btn {
+    margin: 0 auto;
+  }
+}

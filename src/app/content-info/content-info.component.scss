@@ -3,7 +3,7 @@
   margin-bottom: 10px;
 
   &_title{
-    padding: 1rem 0 2rem;
+    padding: 1.15rem 0 1.35rem;
   }
   &_subtitle{
     font-family: 'Overpass', sans-serif;
@@ -11,7 +11,7 @@
     color: #000;
     font-size: 26px;
     text-align: left;
-    padding: 10px 0 0;
+    padding: 7px 0 0;
   }
 
   &_icon {
@@ -25,7 +25,7 @@
     text-align: left;
     text-decoration: none;
     line-height: 1;
-    font-weight: 500;
+    font-weight: 800;
 
     &:hover {
       color: #ff9a46;
@@ -36,6 +36,7 @@
     text-align: left;
     @media (min-width: 1440px) {
       max-width: 22rem;
+      padding-top: 1rem;
     }
   }
 

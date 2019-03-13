@@ -1,0 +1,12 @@
+<div class="modal-header">
+  <div class="modal-header_title">Hi there!</div>
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <app-login (closeModal)="close($event)"></app-login>
+</div>
+<div class="modal-footer" style="justify-content: center;">
+  You are not authorized.
+</div>

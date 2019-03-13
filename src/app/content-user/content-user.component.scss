@@ -1,5 +1,5 @@
 .content-user {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background-size: cover;
 
   &_title{
@@ -7,6 +7,7 @@
     padding-bottom: 5px;
 
   }
+
   &_subtitle{
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
@@ -37,7 +38,11 @@
     text-align: left;
     display: flex;
     font-family: 'Source Sans Pro', sans-serif;
-    flex-basis: 33.33%;
+    flex-basis: 31.33%;
+
+    @media (max-width: 1360px) {
+      margin-bottom: 1.5rem;
+    }
 
     &--name {
       font-weight: 600;
@@ -58,6 +63,9 @@
     &--phone {
       line-height: 18px;
       color: #949292;
+    }
+    &-body {
+      margin-left: 10px;
     }
   }
 
@@ -85,5 +93,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (min-width: 1355px) {
+      height: 350px;
+    }
   }
 }

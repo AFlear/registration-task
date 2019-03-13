@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-modal',
@@ -6,8 +7,11 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
+  public name = ' SEXAS';
 
-  constructor() {
+  @Output() newUser = new EventEmitter<boolean>();
+
+  constructor(private modalService: NgbModal) {
 
   }
 
@@ -15,4 +19,8 @@ export class ModalComponent implements OnInit {
 
   }
 
+  close(event) {
+    event ? this.modalService.dismissAll(): '';
+    this.newUser.emit(true);
+  }
 }

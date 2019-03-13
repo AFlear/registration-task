@@ -87,3 +87,17 @@
     justify-content: center;
   }
 }
+
+.modal {
+  &-header {
+    &_title {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #171039;
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+  }
+}

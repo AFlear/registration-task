@@ -18,13 +18,13 @@
             <span>Users</span>
           </a>
           <a href="#" class="header-menu_item">
-            <span>Sing Up</span>
+            <span >Sing Up</span>
           </a>
       </div>
     </div>
-    <div class="header-login">
-        <span>Login</span>
-        <svg-icon src="../assets/svg/sign-out.svg"></svg-icon>
+    <div class="header-login" >
+        <div (click)="openModal()">{{login ? login: 'Login'}}</div>
+        <svg-icon src="../assets/svg/sign-out.svg" (click)="logOut()"></svg-icon>
     </div>
   </div>
 </header>

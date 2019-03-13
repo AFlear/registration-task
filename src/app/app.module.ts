@@ -12,6 +12,10 @@ import { ContentUserComponent } from './content-user/content-user.component';
 import {SharedModule} from './shared/shared.module';
 import { FooterComponent } from './footer/footer.component';
 import { ContentRegisterComponent } from './content-register/content-register.component';
+import {ModalComponent} from './shared/modal/modal.component';
+import { AdminComponent } from './admin/admin.component';
+import {RouterModule} from '@angular/router';
+import {LoginModule} from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -22,17 +26,21 @@ import { ContentRegisterComponent } from './content-register/content-register.co
     ContentTextComponent,
     ContentUserComponent,
     FooterComponent,
-    ContentRegisterComponent
+    ContentRegisterComponent,
+    AdminComponent
   ],
   imports: [
     HttpClientModule,
     AngularSvgIconModule,
     BrowserModule,
     SharedModule,
-    NgbModule
+    NgbModule,
+    RouterModule,
+    LoginModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[ModalComponent]
 })
 export class AppModule { }
 
