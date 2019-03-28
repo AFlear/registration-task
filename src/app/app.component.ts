@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'registration-task';
+  public registeredUserData: any;
+
+public getData(event){
+  this.registeredUserData = event;
+}
+
 }

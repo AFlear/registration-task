@@ -7,8 +7,6 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  public name = ' SEXAS';
-
   @Output() newUser = new EventEmitter<boolean>();
 
   constructor(private modalService: NgbModal) {

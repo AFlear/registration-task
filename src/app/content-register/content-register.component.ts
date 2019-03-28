@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import {UserService} from '../shared/services/user.service';
 @Component({
@@ -8,6 +8,7 @@ import {UserService} from '../shared/services/user.service';
 })
 export class ContentRegisterComponent implements OnInit {
   public registerForm: any;
+  @Output() userData = new EventEmitter()
   constructor(private fb: FormBuilder, private userService: UserService) {
 
   }
@@ -29,7 +30,7 @@ export class ContentRegisterComponent implements OnInit {
       'email':this.registerForm.controls['email'].value
     };
     this.userService.addUser(data).subscribe((res)=>{
-      console.log(res);
+      this.
     })
   }
 

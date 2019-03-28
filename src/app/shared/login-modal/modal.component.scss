@@ -1,0 +1,103 @@
+.content-user {
+  padding: 8rem 0;
+  background-size: cover;
+
+  &_title{
+    //padding: 1rem 0 2rem;
+    padding-bottom: 5px;
+
+  }
+  &_subtitle{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0 0;
+  }
+
+  &_icon {
+    img {
+      border-radius: 50%;
+      max-width: 5rem;
+      height: auto;
+    }
+  }
+
+  &_link {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ef6c00;
+    font-size: 22px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  &_item {
+    text-align: left;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-basis: 33.33%;
+
+    &--name {
+      font-weight: 600;
+      font-size: 24px;
+      padding-top: 24px;
+    }
+    &--text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      padding: 10px 0 0;
+      color: #949292;
+    }
+    &--email {
+      line-height: 18px;
+      color: #949292;
+    }
+    &--phone {
+      line-height: 18px;
+      color: #949292;
+    }
+  }
+
+  &_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+    text-align: left;
+    padding-bottom: 17px;
+  }
+  &_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 5px;
+    text-align: left;
+    padding-bottom: 17px;
+  }
+
+  &_body {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.modal {
+  &-header {
+    &_title {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #171039;
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {UserService} from '../shared/services/user.service';
 
 @Component({
@@ -7,13 +7,11 @@ import {UserService} from '../shared/services/user.service';
   styleUrls: ['./content-user.component.scss']
 })
 export class ContentUserComponent implements OnInit {
-  public testUsers: any;
   public content: any = [];
   public counter: number;
   public isHidden: boolean = false;
   public hiddenSpinner: boolean = true;
   private page = 1;
-  private lastPageIndex:any;
 
   constructor(private userService: UserService) {
     this.counter = 0;
@@ -25,14 +23,14 @@ export class ContentUserComponent implements OnInit {
 
   public getData() {
     this.userService.getUsers(this.page).subscribe((res) => {
+      // @ts-ignore
       this.content.push(...res);
       this.page += 1;
     });
-    if (this.page >=3) {
+    if (this.page >= 3) {
       this.isHidden = true;
       this.hiddenSpinner = false;
     }
   }
-
 
 }
